@@ -1,0 +1,15 @@
+.container {
+
+}
+
+.title {
+    color: red;
+    font-size: 56px;
+    font-weight: bold;
+
+}
+
+.description {
+    color: #535bf2;
+    font-size: 30px;
+}
