@@ -3,15 +3,19 @@ import {useParams} from "react-router-dom";
 import {format} from "date-fns";
 import {es} from "date-fns/locale";
 
+import useEventsResult from "../../state/events-result.js";
 import styles from './Detail.module.css'
 
 console.log(import.meta.env)
 
 const Detail = () => {
+    const {data} = useEventsResult()
     const {eventId} = useParams();
     const [eventData, setEventData] = useState({})
     const [error, setError] = useState({})
     const [isLoading, setIsLoading] = useState(true)
+
+    console.log(data)
     useEffect(() => {
         const fetchEventData = async () => {
             try {

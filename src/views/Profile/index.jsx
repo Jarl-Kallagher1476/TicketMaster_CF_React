@@ -3,7 +3,10 @@ import {Outlet} from "react-router-dom";
 const Profile = () => {
     return (
         <div>
-            Profile
+            <div>
+                <span>Mi Información</span>
+                <span>Eventos Favoritos</span>
+            </div>
             <Outlet/>
         </div>
     )

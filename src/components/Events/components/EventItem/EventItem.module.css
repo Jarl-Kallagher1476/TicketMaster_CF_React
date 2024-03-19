@@ -32,3 +32,16 @@
 .seeMoreBtn {
     margin-top: 12px;
 }
+
+.imageContainer{
+    position: relative;
+}
+
+.hearthImage {
+    position: absolute;
+    width: 28px;
+    top: 10px;
+    left: 5px;
+    z-index: 1;
+    cursor: pointer;
+}

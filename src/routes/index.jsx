@@ -6,7 +6,11 @@ import {
 import Home from "../views/Home/index.jsx";
 import Detail from "../views/Detail/index.jsx";
 import Error404 from "../views/Error404/index.jsx";
+
 import Profile from "../views/Profile/index.jsx";
+import LikedEvents from "../views/Profile/components/LikedEvents/index.jsx";
+import MyInfo from "../views/Profile/components/MyInfo/index.jsx";
+
 
 const router = createBrowserRouter([
     {
@@ -24,10 +28,10 @@ const router = createBrowserRouter([
         children: [
             {
                 path: 'my-info',
-                element:<div>My Ifno</div>
+                element:<MyInfo/>
             }, {
                 path:'liked-events',
-                element: <div>Liked Events</div>
+                element: <LikedEvents/>
             }
         ]
     },
